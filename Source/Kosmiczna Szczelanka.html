@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+	<canvas id = "canvas" width = "800" height = "600" style = "border: none"></canvas>
+	<script type = "text/javascript" src = "main.js"></script>
+	<script type = "text/javascript" src = "ClassModel.js"></script>
+	<script type = "text/javascript" src = "Render.js"></script>
+	<script type = "text/javascript" src = "Math.js"></script>
+	<script type = "text/javascript" src = "Texture.js"></script>
+	<script type = "text/javascript" src = "ClassFighter.js"></script>
+	<script type = "text/javascript" src = "ClassPlayer.js"></script>
+	<script type = "text/javascript" src = "Keyboard.js"></script>
+	<script type = "text/javascript" src = "GameFunctions.js"></script>
+	<script type = "text/javascript" src = "UpdatesFunctions.js"></script>
+	<script type = "text/javascript" src = "ClassObject.js"></script>
+	<script type = "text/javascript" src = "ClassRocket.js"></script>
+	<script type = "text/javascript" src = "ClassRockets.js"></script>
+	<script>
+		var gl;
+		var program;
+		var MM;
+		var MP;
+		var pressdKeys = {};
+		var fighter = {};
+		fighter = new ClassFighter();
+		var player = new ClassPlayer();
+		var object = {};
+		object[0] = new ClassObject();
+		object[1] = new ClassObject();
+		var rockets = new ClassRockets();
+	</script>
+	<body onload = "main()" style = "margin: 0px">
+	</body>
+</html>

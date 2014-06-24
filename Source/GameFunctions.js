@@ -1,0 +1,5 @@
+function Game()
+{
+	Update();
+	Render();
+}

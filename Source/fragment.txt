@@ -1,0 +1,18 @@
+precision mediump float;
+
+varying vec2 coord;
+
+uniform sampler2D samp;
+uniform float column;
+uniform float row;
+uniform float numCol;
+uniform float numRow;
+
+
+void main()
+{
+	float x = coord.x / numCol + column;
+	float y = coord.y / numRow + row;
+	vec2 texel = vec2(x, y);
+	gl_FragColor = texture2D(samp, texel);
+}
