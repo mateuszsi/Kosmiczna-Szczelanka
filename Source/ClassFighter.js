@@ -36,5 +36,6 @@ function ClassFighter()
 		this.model.ModelPosition(position);
 		this.model.ModelRotate(angle);
 		this.model.ModelDraw(framex, framey, this.columns, this.rows);
+        //testowy komentarz
 	}
 }
